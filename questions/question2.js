@@ -7,7 +7,7 @@ let message = document.getElementById("message");
 // Récupération du nombre de copies entrées et affichage du texte en conséquence
 function effectuerCalcul(){
 
-    nbrePhotocopie = document.getElementById("valeur-saisie").value;
+    nbrePhotocopie = document.getElementById("valeur-saisie").valueAsNumber;
 
     // Sortie de la fonction si les valeurs sont invalides
     if ((isNaN(nbrePhotocopie) == true) || nbrePhotocopie <= 0) {

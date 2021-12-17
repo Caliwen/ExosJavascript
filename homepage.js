@@ -1,6 +1,6 @@
 let button = document.getElementById("js-menu_toggle");
 let sideMenu = document.getElementById("side_menu");
-let linksMenu = document.getElementsByClassName("nav-link");
+let linksMenu = document.getElementsByClassName("nav-item");
 let delay = 0.2;
 
 button.addEventListener("click", function() {

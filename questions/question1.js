@@ -6,11 +6,11 @@ let message = document.getElementById("message");
 
 // Récupération des données saisies et affichage du texte en conséquence
 function verifierImpo(){
-    ageSaisi = document.getElementById("age-saisi").value;
+    ageSaisi = document.getElementById("age-saisi").valueAsNumber;
     genreSaisi = document.getElementById("genre-saisi").value;
 
     // Sortie de la fonction si les valeurs sont invalides
-    if ((isNaN(ageSaisi) == true) || ageSaisi == "" || (genreSaisi != "H" && genreSaisi !="F")) {
+    if ((isNaN(ageSaisi) == true) || (genreSaisi != "H" && genreSaisi != "F")) {
         message.innerHTML = "<p>Veuillez choisir un genre et un âge valide.</p>";
         return;
     }

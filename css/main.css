@@ -37,6 +37,10 @@ a, #side_menu {
   transition: all 300ms ease-in-out;
 }
 
+.mini {
+  width: 83%;
+}
+
 #side_menu {
   background: #00143c;
   height: 100vh;
