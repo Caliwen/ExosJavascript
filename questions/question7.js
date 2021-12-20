@@ -10,10 +10,12 @@ let compteurSecurite;
 let message = document.getElementById("message");
 message.innerHTML = "<span class='text-info'>Commencez par remplir le champ de mot de passe<span>";
 
+// Calcul de la fiabilité du mot de passe et affichage en conséquence
 function verifierMotdepasse(){
     compteurSecurite = 0;
     mdpSaisi = document.getElementById("mdp").value;
 
+    // 5 <- le plus fiable --- 0 <- le moins fiable
     if (regexMaj.test(mdpSaisi)) {
         compteurSecurite += 1;
     }
@@ -34,8 +36,8 @@ function verifierMotdepasse(){
         compteurSecurite += 1;
     }
 
+    // Affichage du message et changement de la couleur du texte liée au tarif
     switch (compteurSecurite){
-
         case 5:
             message.style.color = "#88E0EF"
             message.innerHTML = "<span>Mot de passe très sécurisé !<span>";

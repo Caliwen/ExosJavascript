@@ -30,9 +30,9 @@
         </div>
 
         <!-- Contenu du site -->
-        <div class="container espacement">
+        <div class="container-fluid espacement">
             <div class="row">
-                <div class="col-sm-6 mx-auto mt-1 text-center">
+                <div class="col-12 col-lg-12 col-xxl-4 mx-auto mt-1 text-center">
                     <div class="mb-6">
                         <video src="" class="embed-responsive-item" width="400px" muted autoplay loop id="video">
                             <source type="video/mp4">
@@ -41,6 +41,11 @@
                         <p id="description-objet" class="mt-3"></p>
                         <br>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 col-md-6 col-xxl-4 mx-auto text-center">
                     <div class="mb-5">
                         <label for="prix-propose" class="label">Donnez un prix entre 1 et 100 euros :</label>
                         <input type="number" class="form-control" id="prix-propose" aria-describedby="prix-propose">
@@ -50,6 +55,7 @@
                     <button type="submit" id="bouton" class="btn btn-secondary">Envoyer la proposition</button>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col mx-auto text-center mt-3">
                     <div id="message"></div>

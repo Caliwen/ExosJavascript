@@ -10,7 +10,7 @@ function verifierImpo(){
     genreSaisi = document.getElementById("genre-saisi").value;
 
     // Sortie de la fonction si les valeurs sont invalides
-    if ((isNaN(ageSaisi) == true) || (genreSaisi != "H" && genreSaisi != "F")) {
+    if ((isNaN(ageSaisi) == true) || (ageSaisi <= 0) || (genreSaisi != "H" && genreSaisi != "F")) {
         message.innerHTML = "<p>Veuillez choisir un genre et un âge valide.</p>";
         return;
     }

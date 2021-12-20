@@ -1,0 +1,64 @@
+.tokens {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.zonesDepot {
+  width: 50px;
+  height: 50px;
+  background-color: #865439;
+}
+
+.lignePin {
+  width: 60px;
+}
+
+.zonesPin {
+  width: 20px;
+  height: 20px;
+  background-color: #5C3D2E;
+}
+
+.pinNoire {
+  width: 22px;
+  height: 22px;
+  background-color: #000000;
+  transition: all 1s;
+  transform: scale(1.3);
+}
+
+.pinBlanche {
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  transition: all 1s;
+  transform: scale(1.3);
+}
+
+#mastermind > .row {
+  background-color: #BB8760;
+  width: 350px;
+}
+
+#mastermind > .rowInvisible {
+  background-color: #ff000000;
+}
+
+#mastermind > #gagne {
+  background-color: #3F3351;
+  color: #EADEDE;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  opacity: 0;
+  top: calc(50% + 100px);
+  left: -400px;
+}
+
+#side_menu {
+  height: 130vh;
+}
+
+/*# sourceMappingURL=question10.css.map */

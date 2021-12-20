@@ -54,6 +54,10 @@ a, #side_menu {
   width: 250px;
 }
 
+.carousel-indicators {
+  top: 650px;
+}
+
 .burger_box {
   display: block;
   float: right;
