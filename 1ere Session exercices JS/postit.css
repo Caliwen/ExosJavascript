@@ -1,0 +1,6 @@
+#postit{
+    position: absolute;
+    margin-left: 150px;
+    display: none;
+    background-color: yellow;
+}
